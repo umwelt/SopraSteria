@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26FDE09CC258A471FA17A1EB /* Pods_SopraSteria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDE2E6FE62B036BD888F737 /* Pods_SopraSteria.framework */; };
+		866044C3176FBDE74FF78680 /* Pods_SopraSteriaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1660D62790A6F1F2C02C1992 /* Pods_SopraSteriaTests.framework */; };
+		DA0599B720AAEAC000CCA402 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0599B620AAEAC000CCA402 /* CustomTableViewCell.swift */; };
 		DA4C438A20AAC4570059EFE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C438920AAC4570059EFE1 /* AppDelegate.swift */; };
 		DA4C438C20AAC4570059EFE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C438B20AAC4570059EFE1 /* ViewController.swift */; };
 		DA4C438F20AAC4570059EFE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4C438D20AAC4570059EFE1 /* Main.storyboard */; };
@@ -26,6 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1660D62790A6F1F2C02C1992 /* Pods_SopraSteriaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SopraSteriaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C22AD8662B509C6DA45332 /* Pods-SopraSteriaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SopraSteriaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SopraSteriaTests/Pods-SopraSteriaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3FE8206EADEE9AD863E57D50 /* Pods-SopraSteriaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SopraSteriaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SopraSteriaTests/Pods-SopraSteriaTests.release.xcconfig"; sourceTree = "<group>"; };
+		6202D794149B43503DE30EEA /* Pods-SopraSteria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SopraSteria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SopraSteria/Pods-SopraSteria.debug.xcconfig"; sourceTree = "<group>"; };
+		8699A427993FCC8260B74084 /* Pods-SopraSteria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SopraSteria.release.xcconfig"; path = "Pods/Target Support Files/Pods-SopraSteria/Pods-SopraSteria.release.xcconfig"; sourceTree = "<group>"; };
+		DA0599B620AAEAC000CCA402 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		DA4C438620AAC4560059EFE1 /* SopraSteria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SopraSteria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4C438920AAC4570059EFE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA4C438B20AAC4570059EFE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +45,7 @@
 		DA4C439A20AAC4590059EFE1 /* SopraSteriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SopraSteriaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4C439E20AAC4590059EFE1 /* SopraSteriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SopraSteriaTests.swift; sourceTree = "<group>"; };
 		DA4C43A020AAC4590059EFE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDDE2E6FE62B036BD888F737 /* Pods_SopraSteria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SopraSteria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26FDE09CC258A471FA17A1EB /* Pods_SopraSteria.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +61,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				866044C3176FBDE74FF78680 /* Pods_SopraSteriaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		679AACFA45CC768D87984856 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDDE2E6FE62B036BD888F737 /* Pods_SopraSteria.framework */,
+				1660D62790A6F1F2C02C1992 /* Pods_SopraSteriaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8060B4280760029970CE1494 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6202D794149B43503DE30EEA /* Pods-SopraSteria.debug.xcconfig */,
+				8699A427993FCC8260B74084 /* Pods-SopraSteria.release.xcconfig */,
+				35C22AD8662B509C6DA45332 /* Pods-SopraSteriaTests.debug.xcconfig */,
+				3FE8206EADEE9AD863E57D50 /* Pods-SopraSteriaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA0599B420AAE6FA00CCA402 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA0599B520AAEAA500CCA402 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA0599B620AAEAC000CCA402 /* CustomTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DA4C437D20AAC4560059EFE1 = {
 			isa = PBXGroup;
 			children = (
 				DA4C438820AAC4560059EFE1 /* SopraSteria */,
 				DA4C439D20AAC4590059EFE1 /* SopraSteriaTests */,
 				DA4C438720AAC4560059EFE1 /* Products */,
+				8060B4280760029970CE1494 /* Pods */,
+				679AACFA45CC768D87984856 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +126,8 @@
 		DA4C438820AAC4560059EFE1 /* SopraSteria */ = {
 			isa = PBXGroup;
 			children = (
+				DA0599B520AAEAA500CCA402 /* Views */,
+				DA0599B420AAE6FA00CCA402 /* Controller */,
 				DA4C438920AAC4570059EFE1 /* AppDelegate.swift */,
 				DA4C438B20AAC4570059EFE1 /* ViewController.swift */,
 				DA4C438D20AAC4570059EFE1 /* Main.storyboard */,
@@ -103,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA4C43A320AAC4590059EFE1 /* Build configuration list for PBXNativeTarget "SopraSteria" */;
 			buildPhases = (
+				B660A5415C675637EECC0981 /* [CP] Check Pods Manifest.lock */,
 				DA4C438220AAC4560059EFE1 /* Sources */,
 				DA4C438320AAC4560059EFE1 /* Frameworks */,
 				DA4C438420AAC4560059EFE1 /* Resources */,
+				DD515DCF8FA084AE65D3C374 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA4C43A620AAC4590059EFE1 /* Build configuration list for PBXNativeTarget "SopraSteriaTests" */;
 			buildPhases = (
+				FED1D99513046570FE04E84D /* [CP] Check Pods Manifest.lock */,
 				DA4C439620AAC4590059EFE1 /* Sources */,
 				DA4C439720AAC4590059EFE1 /* Frameworks */,
 				DA4C439820AAC4590059EFE1 /* Resources */,
+				F7C6E31B17AB68A3FEEE10A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,11 +247,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B660A5415C675637EECC0981 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SopraSteria-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD515DCF8FA084AE65D3C374 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SopraSteria/Pods-SopraSteria-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Siesta/Siesta.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siesta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SopraSteria/Pods-SopraSteria-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7C6E31B17AB68A3FEEE10A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SopraSteriaTests/Pods-SopraSteriaTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Siesta/Siesta.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siesta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SopraSteriaTests/Pods-SopraSteriaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FED1D99513046570FE04E84D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SopraSteriaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA4C438220AAC4560059EFE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0599B720AAEAC000CCA402 /* CustomTableViewCell.swift in Sources */,
 				DA4C438C20AAC4570059EFE1 /* ViewController.swift in Sources */,
 				DA4C438A20AAC4570059EFE1 /* AppDelegate.swift in Sources */,
 			);
@@ -291,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -345,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -356,6 +503,7 @@
 		};
 		DA4C43A420AAC4590059EFE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6202D794149B43503DE30EEA /* Pods-SopraSteria.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +522,7 @@
 		};
 		DA4C43A520AAC4590059EFE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8699A427993FCC8260B74084 /* Pods-SopraSteria.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +541,7 @@
 		};
 		DA4C43A720AAC4590059EFE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35C22AD8662B509C6DA45332 /* Pods-SopraSteriaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +563,7 @@
 		};
 		DA4C43A820AAC4590059EFE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FE8206EADEE9AD863E57D50 /* Pods-SopraSteriaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
