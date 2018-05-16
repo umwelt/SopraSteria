@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		26FDE09CC258A471FA17A1EB /* Pods_SopraSteria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDE2E6FE62B036BD888F737 /* Pods_SopraSteria.framework */; };
 		866044C3176FBDE74FF78680 /* Pods_SopraSteriaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1660D62790A6F1F2C02C1992 /* Pods_SopraSteriaTests.framework */; };
+		DA03D18420AC0EC8009D6199 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03D18320AC0EC8009D6199 /* News.swift */; };
+		DA03D18720AC11FF009D6199 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03D18620AC11FF009D6199 /* Extensions.swift */; };
+		DA03D18920AC122F009D6199 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03D18820AC122F009D6199 /* UIColor.swift */; };
+		DA03D18B20AC2AD8009D6199 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03D18A20AC2AD8009D6199 /* DetailViewController.swift */; };
+		DA03D18D20AC3306009D6199 /* UPCarouselLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03D18C20AC3306009D6199 /* UPCarouselLayout.swift */; };
+		DA03D18F20AC36FE009D6199 /* SopraCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03D18E20AC36FE009D6199 /* SopraCollectionViewController.swift */; };
+		DA03D19120AC384D009D6199 /* SopraSteriaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03D19020AC384D009D6199 /* SopraSteriaCollectionViewCell.swift */; };
 		DA0599B720AAEAC000CCA402 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0599B620AAEAC000CCA402 /* CustomTableViewCell.swift */; };
 		DA4C438A20AAC4570059EFE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C438920AAC4570059EFE1 /* AppDelegate.swift */; };
 		DA4C438C20AAC4570059EFE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C438B20AAC4570059EFE1 /* ViewController.swift */; };
@@ -34,6 +41,13 @@
 		3FE8206EADEE9AD863E57D50 /* Pods-SopraSteriaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SopraSteriaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SopraSteriaTests/Pods-SopraSteriaTests.release.xcconfig"; sourceTree = "<group>"; };
 		6202D794149B43503DE30EEA /* Pods-SopraSteria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SopraSteria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SopraSteria/Pods-SopraSteria.debug.xcconfig"; sourceTree = "<group>"; };
 		8699A427993FCC8260B74084 /* Pods-SopraSteria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SopraSteria.release.xcconfig"; path = "Pods/Target Support Files/Pods-SopraSteria/Pods-SopraSteria.release.xcconfig"; sourceTree = "<group>"; };
+		DA03D18320AC0EC8009D6199 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		DA03D18620AC11FF009D6199 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DA03D18820AC122F009D6199 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		DA03D18A20AC2AD8009D6199 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DA03D18C20AC3306009D6199 /* UPCarouselLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPCarouselLayout.swift; sourceTree = "<group>"; };
+		DA03D18E20AC36FE009D6199 /* SopraCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SopraCollectionViewController.swift; sourceTree = "<group>"; };
+		DA03D19020AC384D009D6199 /* SopraSteriaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SopraSteriaCollectionViewCell.swift; sourceTree = "<group>"; };
 		DA0599B620AAEAC000CCA402 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		DA4C438620AAC4560059EFE1 /* SopraSteria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SopraSteria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4C438920AAC4570059EFE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,9 +102,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DA03D18220AC0EB3009D6199 /* DataLayers */ = {
+			isa = PBXGroup;
+			children = (
+				DA03D18320AC0EC8009D6199 /* News.swift */,
+			);
+			path = DataLayers;
+			sourceTree = "<group>";
+		};
+		DA03D18520AC11F4009D6199 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA03D18620AC11FF009D6199 /* Extensions.swift */,
+				DA03D18820AC122F009D6199 /* UIColor.swift */,
+				DA03D18C20AC3306009D6199 /* UPCarouselLayout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DA0599B420AAE6FA00CCA402 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DA03D18A20AC2AD8009D6199 /* DetailViewController.swift */,
+				DA03D18E20AC36FE009D6199 /* SopraCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -99,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				DA0599B620AAEAC000CCA402 /* CustomTableViewCell.swift */,
+				DA03D19020AC384D009D6199 /* SopraSteriaCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,6 +161,8 @@
 		DA4C438820AAC4560059EFE1 /* SopraSteria */ = {
 			isa = PBXGroup;
 			children = (
+				DA03D18520AC11F4009D6199 /* Extensions */,
+				DA03D18220AC0EB3009D6199 /* DataLayers */,
 				DA0599B520AAEAA500CCA402 /* Views */,
 				DA0599B420AAE6FA00CCA402 /* Controller */,
 				DA4C438920AAC4570059EFE1 /* AppDelegate.swift */,
@@ -343,9 +380,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA03D18720AC11FF009D6199 /* Extensions.swift in Sources */,
+				DA03D18920AC122F009D6199 /* UIColor.swift in Sources */,
+				DA03D18D20AC3306009D6199 /* UPCarouselLayout.swift in Sources */,
 				DA0599B720AAEAC000CCA402 /* CustomTableViewCell.swift in Sources */,
 				DA4C438C20AAC4570059EFE1 /* ViewController.swift in Sources */,
+				DA03D18420AC0EC8009D6199 /* News.swift in Sources */,
+				DA03D18F20AC36FE009D6199 /* SopraCollectionViewController.swift in Sources */,
 				DA4C438A20AAC4570059EFE1 /* AppDelegate.swift in Sources */,
+				DA03D19120AC384D009D6199 /* SopraSteriaCollectionViewCell.swift in Sources */,
+				DA03D18B20AC2AD8009D6199 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

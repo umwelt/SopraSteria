@@ -11,25 +11,62 @@ import SnapKit
 
 class CustomTableViewCell: UITableViewCell {
     
+    static var nib:UINib {
+        return UINib(nibName: identifier, bundle: nil)
+    }
+    
+    static var identifier: String {
+        return String(describing: self)
+    }
+    
     // Properties
     
-    fileprivate lazy var customLabel: UILabel = {
+    // Image
+    fileprivate lazy var newImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = #imageLiteral(resourceName: "profileAvatar")
+        
+        return imageView
+    }()
+    
+    // Title
+    fileprivate lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "My cell"
         label.textColor = .black
         
         return label
     }()
     
-    // Image View
+    fileprivate lazy var newLabel = Init(with: UILabel()) { label in
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .black
+    }
     
+    // SubTitle
+    fileprivate lazy var subtitleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = UIColor.pinkyPurple()
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        
+        return label
+    }()
     
-    /// another label
     
     var customString: String = "" {
         didSet {
-            customLabel.text = customString
+            titleLabel.text = customString
+        }
+    }
+    
+    var subtitleString: String = "" {
+        didSet {
+            subtitleLabel.text = subtitleString
         }
     }
 
@@ -48,15 +85,33 @@ class CustomTableViewCell: UITableViewCell {
     
     private func deployLayout(){
         
-        // Add imageview
+
         
-        contentView.addSubview(customLabel)
-        customLabel.snp.makeConstraints { (make) in
-            make.centerY.equalTo(contentView.snp.centerY)
-            make.left.equalTo(20)
+        // * first element anchored to the top of contenView
+        contentView.addSubview(newImage)
+            newImage.snp.makeConstraints { (make) in
+            make.width.height.equalTo(30)
+            make.top.equalTo(contentView.snp.top).offset(10)
+            make.left.equalTo(contentView.snp.left).offset(10)
         }
         
-        /// add secondary label
+        contentView.addSubview(titleLabel)
+        titleLabel.snp.makeConstraints { (make) in
+            make.left.equalTo(newImage.snp.right).offset(10)
+            make.top.equalTo(contentView.snp.top).offset(10)
+        }
+        
+        
+        // Last element anchored to the bottom of contentView
+        contentView.addSubview(subtitleLabel)
+        subtitleLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(titleLabel.snp.bottom).offset(8)
+            make.left.equalTo(titleLabel.snp.left)
+            make.bottom.equalTo(contentView.snp.bottom).offset(-10)
+            // later
+            make.right.equalTo(contentView.snp.right).offset(-10)
+        }
+        
         
         
     }
@@ -71,8 +126,9 @@ class CustomTableViewCell: UITableViewCell {
         super.prepareForReuse()
     }
     
-    func with(value: Int) {
-        customString = String(value)
+    func with(news: News) {
+        customString = news.title
+        subtitleString = news.subtitle
     }
 
 }
