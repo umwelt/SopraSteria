@@ -17,6 +17,8 @@
 		DA03D18F20AC36FE009D6199 /* SopraCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03D18E20AC36FE009D6199 /* SopraCollectionViewController.swift */; };
 		DA03D19120AC384D009D6199 /* SopraSteriaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03D19020AC384D009D6199 /* SopraSteriaCollectionViewCell.swift */; };
 		DA0599B720AAEAC000CCA402 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0599B620AAEAC000CCA402 /* CustomTableViewCell.swift */; };
+		DA07DEBB20AD72C20063916C /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07DEBA20AD72C20063916C /* FocusViewController.swift */; };
+		DA07DEBF20AD73260063916C /* LatestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07DEBC20AD72DF0063916C /* LatestViewController.swift */; };
 		DA4C438A20AAC4570059EFE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C438920AAC4570059EFE1 /* AppDelegate.swift */; };
 		DA4C438C20AAC4570059EFE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C438B20AAC4570059EFE1 /* ViewController.swift */; };
 		DA4C438F20AAC4570059EFE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4C438D20AAC4570059EFE1 /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		DA03D18E20AC36FE009D6199 /* SopraCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SopraCollectionViewController.swift; sourceTree = "<group>"; };
 		DA03D19020AC384D009D6199 /* SopraSteriaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SopraSteriaCollectionViewCell.swift; sourceTree = "<group>"; };
 		DA0599B620AAEAC000CCA402 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		DA07DEBA20AD72C20063916C /* FocusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewController.swift; sourceTree = "<group>"; };
+		DA07DEBC20AD72DF0063916C /* LatestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestViewController.swift; sourceTree = "<group>"; };
 		DA4C438620AAC4560059EFE1 /* SopraSteria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SopraSteria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4C438920AAC4570059EFE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA4C438B20AAC4570059EFE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 			children = (
 				DA03D18A20AC2AD8009D6199 /* DetailViewController.swift */,
 				DA03D18E20AC36FE009D6199 /* SopraCollectionViewController.swift */,
+				DA07DEBA20AD72C20063916C /* FocusViewController.swift */,
+				DA07DEBC20AD72DF0063916C /* LatestViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -385,10 +391,12 @@
 				DA03D18D20AC3306009D6199 /* UPCarouselLayout.swift in Sources */,
 				DA0599B720AAEAC000CCA402 /* CustomTableViewCell.swift in Sources */,
 				DA4C438C20AAC4570059EFE1 /* ViewController.swift in Sources */,
+				DA07DEBF20AD73260063916C /* LatestViewController.swift in Sources */,
 				DA03D18420AC0EC8009D6199 /* News.swift in Sources */,
 				DA03D18F20AC36FE009D6199 /* SopraCollectionViewController.swift in Sources */,
 				DA4C438A20AAC4570059EFE1 /* AppDelegate.swift in Sources */,
 				DA03D19120AC384D009D6199 /* SopraSteriaCollectionViewCell.swift in Sources */,
+				DA07DEBB20AD72C20063916C /* FocusViewController.swift in Sources */,
 				DA03D18B20AC2AD8009D6199 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,6 +558,7 @@
 			baseConfigurationReference = 6202D794149B43503DE30EEA /* Pods-SopraSteria.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GX9WC4VQY;
 				INFOPLIST_FILE = SopraSteria/Info.plist;
@@ -559,6 +568,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = bmagh.me.SopraSteria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -569,6 +579,7 @@
 			baseConfigurationReference = 8699A427993FCC8260B74084 /* Pods-SopraSteria.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GX9WC4VQY;
 				INFOPLIST_FILE = SopraSteria/Info.plist;
@@ -578,6 +589,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = bmagh.me.SopraSteria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

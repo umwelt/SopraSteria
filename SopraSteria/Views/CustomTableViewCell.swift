@@ -40,19 +40,17 @@ class CustomTableViewCell: UITableViewCell {
         return label
     }()
     
-    fileprivate lazy var newLabel = Init(with: UILabel()) { label in
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = .black
-    }
+ 
     
     // SubTitle
     fileprivate lazy var subtitleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = UIColor.pinkyPurple()
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont.systemFont(ofSize: 16)
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
+        label.textAlignment = .justified
         
         return label
     }()
@@ -109,7 +107,7 @@ class CustomTableViewCell: UITableViewCell {
             make.left.equalTo(titleLabel.snp.left)
             make.bottom.equalTo(contentView.snp.bottom).offset(-10)
             // later
-            make.right.equalTo(contentView.snp.right).offset(-10)
+            make.right.equalTo(contentView.snp.right).offset(-40)
         }
         
         
